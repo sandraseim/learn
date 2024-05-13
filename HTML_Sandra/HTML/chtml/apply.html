@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply - Harry Potter Guinea Pig School</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Guinea Pig School</h1>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="students.html">Our Students</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="apply-form">
+            <h2>Apply Now</h2>
+            <img src="resources/apply.jpeg" alt="apply" style="width: 200px;">
+            <form id="applyForm" onsubmit="handleSubmit()">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="text">Text:</label><br>
+                <textarea id="text" name="text" required> </textarea>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <fieldset>
+                    <legend>Select Study Level:</legend>
+                    <input type="radio" id="highest" name="studyType" value="Highest - €2000">
+                    <label for="highest">High - €2000</label><br>
+                    <input type="radio" id="normal" name="studyType" value="Normal - €1000">
+                    <label for="normal">Elementary - €1000</label><br>
+                    <input type="radio" id="lowest" name="studyType" value="Lowest - €500">
+                    <label for="lowest">Basic - €500</label><br>
+                </fieldset><br>
+
+                <button type="button" onclick="calculatePrice()" class="apply-button">Calculate Price</button><br><br> 
+                <p id="price"></p>
+                <label for="reasons">Reasons to Apply:</label><br>
+                <table id="reasonsTable" style="width:100%">
+                    <tr>
+                        <th>Reason</th>
+                    </tr>
+                    <tr>
+                        <td>Become smart</td>
+                    </tr>
+                    <tr>
+                        <td>New Friends</td>
+                    </tr>
+                    <tr>
+                        <td>Magical Environment</td>
+                    </tr>
+                    <tr>
+                        <td>Learn Spells</td>
+                    </tr>
+                    <tr>
+                        <td>Transform into Wizards</td>
+                    </tr>
+                    <tr>
+                        <td>Explore Hogwarts</td> 
+                    </tr>
+                </table><br>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Harry Potter Guinea Pig School. All rights reserved. <a href="mailto:sandraseimuskina@gmail.com">Contact Us</a></p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
