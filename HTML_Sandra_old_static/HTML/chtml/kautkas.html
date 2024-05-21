@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events Example</title>
+</head>
+<body>
+    <button id="myButton">Click Me</button>
+    <script>
+        // Get the button element
+        const button = document.getElementById('myButton');
+
+        // Add a click event listener
+        button.addEventListener('click', function() {
+            // Change the button text when clicked
+            button.textContent = 'Clicked!';
+        });
+    </script>
+</body>
+</html>
